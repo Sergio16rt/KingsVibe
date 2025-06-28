@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background: #f7f1f1;
+  position: relative;
+  text-align: center;
+  cursor: url('../img/cursordia.png'), auto;
+}
+
+body.solo-index {
+  overflow: hidden;
+}
+
+body.noche {
+  background: #0a0a1f;
+  color: #eee;
+  cursor: url('../img/cursornoche.png'), auto;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -3;
+  opacity: 0.05;
+  background: radial-gradient(circle, #fff 1px, transparent 1px), 
+              radial-gradient(circle, #fff 1px, transparent 1px);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+}
+
+/* Botones fijos abajo a la izquierda y derecha */
+.controles-musica {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+}
+#btn-musica {
+  background: #d5b3f7;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+#modo-noche {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+  background: #6d5eac;
+  color: white;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+
+canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.titulo {
+  animation: flotar 4s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

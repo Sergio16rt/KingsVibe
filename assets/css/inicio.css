@@ -1,0 +1,33 @@
+/* inicio.css */
+.container {
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #aa7bc3;
+  margin-bottom: 0.5em;
+}
+
+.frase {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  color: #555;
+}
+
+.botones a {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.8em 1.5em;
+  background: #e4c3f2;
+  color: #fff;
+  border-radius: 30px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.botones a:hover {
+  transform: scale(1.05);
+  background: #d3a7ee;
+}

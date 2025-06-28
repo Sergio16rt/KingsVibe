@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>King's Vibes</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/cursor.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+<body class="solo-index">
+
+  <div class="background-overlay"></div>
+
+  <!-- CANVAS para mariposas (modo día) y para estrellas + galaxias + fugaces (modo noche) -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+
+  <div class="container">
+    <h1 class="titulo" id="titulo-king">King's Vibes</h1>
+    <p class="frase-dinamica" id="frase-dinamica"></p>
+
+    <div class="divisor-onda"></div>
+
+    <div class="botones">
+      <a href="frases/index.html" class="enlace">Frases</a>
+      <a href="textos/index.html" class="enlace">Textos</a>
+      <a href="mihistoria/index.html" class="enlace">Mi Historia</a>
+    </div>
+
+    <div class="controles-musica">
+      <button id="btn-musica">🎶 Fluye con ella</button>
+      <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+    </div>
+
+    <button id="modo-noche">🌙 Modo Noche</button>
+
+    <audio id="audio-dia" src="assets/audio/musica-dia.mp3" loop></audio>
+    <audio id="audio-noche" src="assets/audio/musica-noche.mp3" loop></audio>
+  </div>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/magia.js"></script>
+
+</body>
+</html>

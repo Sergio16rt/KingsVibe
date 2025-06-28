@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #fff0f5, #fce4ec);
+  font-family: 'IM Fell English SC', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Modo noche */
+body.noche {
+  background: #1e1b2e;
+  color: #e4d9ff;
+}
+
+body.noche .page {
+  background: #2d2640;
+  color: #e4d9ff;
+}
+
+body.noche .magic-button {
+  background: linear-gradient(to right, #4b0082, #8a2be2);
+  box-shadow: 0 0 20px #7b68ee;
+}
+
+
+.book-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Libro */
+.book {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  perspective: 2000px;
+  overflow: hidden;
+}
+
+/* Página */
+.spread {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.spread.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+.page {
+  width: 50%;
+  height: 100%;
+  background: #fff8f2;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  padding: 50px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.page.left {
+  border-right: 1px solid #e0c0c0;
+}
+
+.page.right {
+  border-left: 1px solid #e0c0c0;
+}
+
+.page-content {
+  font-size: 20px;
+  line-height: 1.7;
+  flex-grow: 1;
+  z-index: 2;
+}
+
+.cover-image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.cover-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Respetará todo el espacio disponible sin recorte */
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.cover-page {
+  padding: 20px; /* Uniforme en todos lados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magic-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b10063;
+  text-shadow: 0 0 10px #ff69b4;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #ff69b4; }
+  100% { text-shadow: 0 0 20px #ff1493; }
+}
+
+.page-number {
+  font-size: 16px;
+  color: #888;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.magic-button {
+  background: linear-gradient(to right, #ffb6c1, #ff69b4);
+  color: white;
+  font-size: 20px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff80ab;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.magic-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ff4081;
+}
+
+
+
+
+
+
+
+#modo-noche {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+  background: #6d5eac;
+  color: white;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.controles-musica {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+#btn-musica {
+  background: #d5b3f7;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#volumen {
+  margin-top: 8px;
+  width: 120px;
+}
+
+/* Botón volver atrás */
+.volver-atras {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #aa7bc3;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  animation: latido 2s infinite;
+}
+
+.volver-atras:hover {
+  background-color: #c19ad3;
+  transform: scale(1.05);
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+
+/* Corazones decorativos */
+.corazones {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.corazon {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: rebotar 6s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes rebotar {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-100px) scale(1.3); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+
+
+.palabra-magica {
+  animation: brillar 2s infinite alternate;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+
+@keyframes brillar {
+  0% { text-shadow: 0 0 3px #fff; }
+  100% { text-shadow: 0 0 12px #f0f; }
+}
+
+
+.con-imagen {
+  cursor: pointer;
+  color: #bb44aa;
+  text-decoration: underline;
+  position: relative;
+}
+
+.popup-img {
+  position: fixed;
+  max-width: 320px;
+  max-width: 320px;
+  border: 4px solid white;
+  border-radius: 16px;
+  box-shadow: 0 0 25px #aaa;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.8) translate(-50%, -50%); }
+  to { opacity: 1; transform: scale(1) translate(-50%, -50%); }
+}
+
+
+.con-link {
+  color: #a14cff;
+  font-weight: bold;
+  text-decoration: underline dotted;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.con-link:hover {
+  transform: scale(1.1);
+  color: #ff85de;
+}
+
+.frase-miedo {
+  font-style: italic;
+  color: #d94dff;
+  animation: palpito 3s infinite alternate;
+  position: relative;
+  text-shadow: 0 0 4px #fff3ff;
+}
+
+@keyframes palpito {
+  0% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+  100% { opacity: 0.8; transform: scale(1); }
+}
+
+
+
+.estrella-cayendo {
+  position: fixed;
+  top: 0;
+  font-size: 1.5rem;
+  animation: caer 3s ease-in;
+  z-index: 999;
+  pointer-events: none;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+.mariposa-cursor {
+  position: fixed;
+  font-size: 2.2rem;
+  pointer-events: none;
+  z-index: 9999;
+  transition: none;
+  transform: translate(-50%, -50%);
+}

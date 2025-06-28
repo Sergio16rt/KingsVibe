@@ -1,0 +1,107 @@
+/* frases.css */
+.frases-body {
+  background: #fef6fa;
+  padding: 2em;
+}
+
+.frases-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.frases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5em;
+  padding: 1.5em;
+}
+
+/* Tarjeta nueva */
+.frase-card {
+  background: #f3e6f7;
+  padding: 1.2em;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-height: 100px;
+}
+
+.frase-card h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+  color: #aa7bc3;
+  margin: 0;
+}
+
+.frase-card p.frase-contenido {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 0.8rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Al hacer clic */
+.frase-card.expandida {
+  max-height: 300px;
+}
+
+.frase-card.expandida p.frase-contenido {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* Animaciones existentes */
+.frase-card:hover {
+  transform: scale(1.02);
+  background: #ead4f0;
+}
+
+.volver-inicio {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #aa7bc3;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  animation: latido 2s infinite;
+}
+
+.volver-inicio:hover {
+  background-color: #c19ad3;
+  transform: scale(1.05);
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #aa7bc3;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

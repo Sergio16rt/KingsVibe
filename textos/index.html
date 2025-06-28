@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Textos - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/textos.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-con-musica">
+
+  <!-- Fondos animados -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+
+  <div class="background-overlay"></div>
+
+  <div class="textos-container">
+    <h1 class="titulo">Textos</h1>
+    <div class="textos-lista">
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">El Valor de lo Irremplazable</h3><a href="texto1.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Cuando el silencio pesa más que el reconocimiento</h3><a href="texto2.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Nostalgia: ¿Aliada o Enemiga?</h3><a href="texto3.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Miedo a sentir</h3><a href="texto4.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Escuchar sin aprender</h3><a href="texto5.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Antes de que Sea Tarde</h3><a href="texto6.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">El Lado Oscuro del Descanso</h3><a href="texto7.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Lo que un Te Quiero puede cambiar</h3><a href="texto8.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Decirlo de Verdad</h3><a href="texto9.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Vivir sin perder la magia</h3><a href="texto10.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">La Familia que Elegimos</h3><a href="texto11.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Las Últimas Veces</h3><a href="texto12.html" class="tarjeta-boton">Leer más →</a></div>
+	  <div class="tarjeta-texto"><h3 class="tarjeta-titulo">Ojalá alguien lo notara</h3><a href="texto13.html" class="tarjeta-boton">Leer más →</a></div>
+	</div>
+  </div>
+
+  <!-- Botones fijos -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio compartido -->
+  <audio id="audio-dia" src="../assets/audio/musica-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+  <a href="../index.html" class="volver-inicio">⬅ Volver al Inicio</a>
+</body>
+</html>

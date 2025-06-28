@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Las últimas veces - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Las últimas veces</h1>
+    <div class="texto-contenido">
+		<p>Nunca sabemos cuándo será la última vez. Si lo supiéramos, tal vez lo haríamos diferente, tal vez nos detendríamos un segundo más, tal vez dejaríamos que el momento nos cale hasta los huesos, hasta el alma. Pero la vida no avisa.
+
+		La última vez que saliste a jugar con tus amigos de la infancia, corriste como si lo fueras a hacer siempre. No pensaste que un día ya no habría más tardes en la calle, que la última carcajada en aquella esquina marcaría el fin de una era. Que un día, sin darte cuenta, sería la última vez que llamaras a la puerta de su casa para preguntar si podían salir. No hubo una despedida, no hubo un "hasta aquí hemos llegado". Solo crecieron, las responsabilidades llegaron y, sin darse cuenta, dejaron de verse.
+
+		La última vez que viste a tu abuelo sentado en su sillón favorito, miraste rápido, sin detenerte demasiado. Tal vez le dijiste adiós con la mano, tal vez ni eso. Tal vez pensaste "mañana vengo y me siento a hablar con él", pero el mañana no llegó. Y cuando volviste, el sillón seguía ahí, pero él no. Y entonces te golpeó la certeza de que ya no habría otra conversación, otro consejo, otra historia repetida que ahora pagarías por volver a escuchar.
+
+		La última vez que una persona te dijo "te quiero", puede que ni siquiera lo escucharas bien, que lo dieras por hecho, que no le dieras el valor que tenía. Y cuando ese "te quiero" deja de llegar, cuando el silencio ocupa su lugar, es cuando entiendes que no hay más. Que no habrá otro mensaje, otra llamada, otro abrazo.
+
+		La última vez que viste a un amigo, tal vez no lo sabías. Se despidieron como siempre, con un "nos vemos", con la confianza de que habría más risas, más conversaciones, más anécdotas. Pero la vida los llevó por caminos distintos, y sin saberlo, ese encuentro fue el último. Ahora miras sus fotos y recuerdas lo que fueron, pero no lo que podrían haber sido.
+
+		La última vez que tu madre te llamó a cenar con esa voz cansada pero llena de amor, lo hizo como siempre, y tú respondiste como siempre. No pensaste que, en algún momento, sería la última vez que lo haría. Que un día, el plato seguiría en la mesa, pero su voz ya no estaría. Que la silla quedaría vacía y el silencio pesaría más que cualquier ruido.
+
+		La última vez que dormiste en tu cuarto de la infancia, te acostaste sin pensar en ello. No sabías que sería la última noche entre esas paredes que te vieron crecer. Que al día siguiente recogerías tus cosas y te irías, y aunque podrías volver, ya nunca sería lo mismo.
+
+		La última vez que fuiste verdaderamente feliz sin preocuparte por nada, no lo notaste. No sabías que a partir de cierto momento las preocupaciones se instalarían en tu mente, que la vida ya no te permitiría esa ligereza, que la infancia quedaría atrás sin despedirse.
+
+		Las últimas veces son traicioneras. Pasan desapercibidas, se camuflan en la rutina, se esconden en lo cotidiano. No llevan un cartel que diga "disfrútalo, porque nunca más". Simplemente pasan… y luego duelen. Duelen cuando miras atrás y te das cuenta de que hubo un día en el que hiciste algo por última vez sin saberlo. Y ya no hay forma de volver.
+
+		Por eso, abraza más fuerte. Ríe más alto. Escucha con atención. Quédate un segundo más. No des por hecho los momentos. Porque en algún momento, sin que lo sepas, estarás viviendo una última vez.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

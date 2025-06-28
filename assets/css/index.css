@@ -1,0 +1,101 @@
+.container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #aa7bc3;
+  margin-bottom: 0.5em;
+  transition: text-shadow 0.3s;
+}
+
+.titulo:hover {
+  text-shadow: 0 0 15px #d7aefb, 0 0 25px #e0bbff;
+}
+
+.frase-dinamica {
+  font-size: 1.2rem;
+  color: #555;
+  height: 2em;
+  margin-bottom: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #aa7bc3;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #aa7bc3 }
+}
+
+.botones {
+  margin: 1em 0;
+}
+
+.botones a {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.8em 1.5em;
+  background: #e4c3f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.botones a:hover {
+  background: #d3a7ee;
+  box-shadow: 0 0 10px #d3a7ee;
+}
+
+.controles-musica {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#btn-musica {
+  background: #d5b3f7;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#modo-noche {
+  margin-top: 1em;
+  background: #6d5eac;
+  color: white;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.oculto {
+  display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libro Mágico - Clave</title>
+  <link rel="stylesheet" href="../assets/css/mihistoria.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <video autoplay muted loop id="video-fondo">
+  <source src="../assets/img/fondo2.mp4" type="video/mp4" />
+  </video>
+  <a href="../index.html" class="volver-atras">⬅ Volver atrás</a>
+
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <audio id="musica" src="../assets/audio/mihistoria.mp3" loop></audio>
+
+  <!-- Fondo corazones -->
+  <div class="corazones" id="corazones"></div>
+
+  <div class="book-container">
+    <div class="book">
+      <!-- Spread único: portada izquierda, clave derecha -->
+      <div class="spread" data-spread="1">
+        <div class="page left">
+          <div class="page-content cover-image">
+            <img src="../assets/img/portada-mihistoria6.png" alt="Portada MiHistoria" />
+          </div>
+          <div class="page-number">1</div>
+        </div>
+        <div class="page right">
+          <div class="page-content clave">
+            <h1 class="magic-title">Bienvenido a Mi Historia</h1>
+            <p id="fraseClave">¿Eres tú quien debe entrar?</p>
+            <form id="formularioClave">
+              <input type="text" id="clave" placeholder="Introduce la clave mágica..." required />
+              <button type="submit">Entrar</button>
+            </form>
+            <p id="mensajeError"></p>
+          </div>
+          <div class="page-number">2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/contraseña.js"></script>
+</body>
+</html>

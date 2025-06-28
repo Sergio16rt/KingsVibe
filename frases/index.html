@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frases - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/frases.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-con-musica">
+
+  <!-- Fondos animados -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+
+  <div class="background-overlay"></div>
+
+  <div class="frases-container">
+    <h1 class="titulo">Frases</h1>
+    <div class="frases-grid">
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>Lugares que el Tiempo no Borra</h2>
+		<p class="frase-contenido">La nostalgia nos recuerda lo que fuimos, pero también puede cegarnos de lo que aún podemos llegar a ser.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>Los Lugares que Nunca Nos Sueltan</h2>
+		<p class="frase-contenido">Hay lugares que guardan nuestros mejores recuerdos, esos a los que no siempre podemos volver, pero que nunca dejamos de sentir.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>Consejos que ignoramos</h2>
+		<p class="frase-contenido">Escuchar es fácil, pero aprender a entender lo que nos dicen nuestros padres es lo que realmente cuenta.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>Cuando las Luces se Apagan</h2>
+		<p class="frase-contenido">Los pensamientos más oscuros siempre llegan cuando intentas apagar la luz, pero son parte de lo que somos.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>El Tiempo que Perdemos al Crecer</h2>
+		<p class="frase-contenido">Disfruta ser niño antes de que la prisa de crecer te robe esos momentos que jamás volverán.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>El Peso del Silencio Emocional</h2>
+		<p class="frase-contenido">A veces, el mayor miedo no es lo que sentimos, sino lo que dejamos de sentir por miedo.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>El Valor de Elegir tu Propia Familia</h2>
+		<p class="frase-contenido">Elige a quienes te hacen sentir en casa, porque la verdadera familia es aquella que te elige también.</p>
+	  </div>
+	  <div class="frase-card" onclick="toggleFrase(this)">
+		<h2>El Poder de un "Te Quiero" en el Momento Adecuado</h2>
+		<p class="frase-contenido">Decir "Te quiero" no solo hace que alguien se sienta valorado, también puede cambiar su día.</p>
+	  </div>
+	</div>
+    </div>
+  </div>
+
+  <!-- Botones fijos como en index -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio compartido -->
+  <audio id="audio-dia" src="../assets/audio/musica-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+  <a href="../index.html" class="volver-inicio">⬅ Volver al Inicio</a>
+  <script>
+	  function toggleFrase(elemento) {
+		elemento.classList.toggle("expandida");
+	  }
+  </script>
+
+</body>
+</html>

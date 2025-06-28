@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ojalá alguien lo notara - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Ojalá alguien lo notara</h1>
+    <div class="texto-contenido">
+      <p>Sonrío. Siempre sonrío. A veces hasta exagero, me río más fuerte de lo normal, cuento una broma tras otra para que nadie tenga tiempo de notar nada raro. Y funciona. Siempre funciona. La gente me ve como el de siempre, el que nunca parece estar mal, el que no se quiebra. Como si todo estuviera bien.
+
+		Pero la verdad es que, cuando nadie mira, cuando me quedo solo, todo pesa demasiado.
+
+		Hay noches en las que me cuesta dormir, no porque no tenga sueño, sino porque mi mente no me deja en paz. Se llena de pensamientos que intento ignorar durante el día, pero que por la noche se hacen gigantes. Cosas que no he dicho, cosas que no he hecho, cosas que me duelen y que no sé cómo manejar. Me doy la vuelta en la cama, pongo música, intento distraerme con cualquier cosa. Pero nada ayuda. Y entonces me pregunto: si desapareciera por un tiempo, ¿alguien lo notaría?
+
+		Durante el día sigo con mi papel. Si me preguntan qué tal estoy, respondo lo de siempre: “Bien”. Porque sé que decir otra cosa solo haría que la conversación se volviera incómoda. Porque cuando alguien pregunta eso, en realidad no quiere saber la verdad. No quieren respuestas largas, no quieren problemas. Solo quieren escuchar un “bien” y seguir con su vida.
+
+		Así que finjo. Y finjo tan bien que hasta yo me lo creo. Hasta que un día me doy cuenta de que ya no sé cuándo fue la última vez que hablé en serio con alguien. Cuándo fue la última vez que dije lo que realmente sentía sin adornarlo con una broma.
+
+		Y entonces llega el otro miedo. El miedo a que, aunque lo dijera, no cambiara nada. A que si un día dejara de reír, dejara de hablar tanto, dejara de poner esa barrera entre los demás y yo… nada sería diferente. Que la gente simplemente asumiría que estoy más callado y seguiría con su vida.
+
+		Es un pensamiento que no debería tener, pero que está ahí, acechando en los días malos.
+
+		Porque a veces lo único que quiero es que alguien, una sola persona, me mire a los ojos y vea más allá. Que no se conforme con un “bien”. Que no se quede solo con la versión que muestro. Que, aunque yo le diga que todo está bien, no me crea.
+
+		Pero nadie lo hace.
+
+		Y lo que más miedo me da… es que, algún día, deje de esperar que lo hagan.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

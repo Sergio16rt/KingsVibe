@@ -1,0 +1,7 @@
+body {
+  cursor: url('../img/cursor-dia.png'), auto;
+}
+
+body.noche {
+  cursor: url('../img/cursor-noche.png'), auto;
+}

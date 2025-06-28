@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #fff0f5, #fce4ec);
+  font-family: 'IM Fell English SC', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  transition: background 0.5s ease;
+  position: relative;
+}
+
+body.noche {
+  background: #1e1b2e;
+  color: #e4d9ff;
+}
+
+body.noche .page {
+  background: #2d2640;
+  color: #e4d9ff;
+}
+
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.90; /* Puedes ajustar la opacidad */
+  pointer-events: none;
+}
+
+/* Libro */
+.book-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.book {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  perspective: 2000px;
+  overflow: hidden;
+}
+
+.spread {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 50%;
+  height: 100%;
+  background: #fff8f2;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  padding: 50px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.page.left {
+  border-right: 1px solid #e0c0c0;
+}
+
+.page.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #999;
+}
+
+.page-content.clave {
+  text-align: center;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen portada */
+.cover-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+/* Cuadro clave */
+.clave-wrapper {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.clave-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.clave-wrapper input[type="text"] {
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.clave-wrapper button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #d5b3f7;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Frase animada */
+#fraseClave {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  animation: resplandor 3s infinite ease-in-out;
+  color: #b04040;
+}
+
+@keyframes resplandor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Botón volver atrás */
+.volver-atras {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: linear-gradient(to right, #ff6666, #d94747);
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  animation: latido 2s infinite;
+}
+
+.volver-atras:hover {
+  background-color: #e85b5b;
+  transform: scale(1.05);
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+/* Botón modo noche */
+#modo-noche {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: linear-gradient(to right, #ff6666, #d94747);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#modo-noche:hover {
+  transform: scale(1.05);
+}
+
+/* Controles música */
+.controles-musica {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+#btn-musica {
+  background: linear-gradient(to right, #ff6666, #d94747);
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+#btn-musica:hover {
+  transform: scale(1.05);
+}
+
+#volumen {
+  margin-top: 8px;
+  width: 120px;
+}
+
+
+/* Título mágico */
+.magic-title {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #d94f4f;
+  text-shadow: 0 0 10px rgba(255, 128, 128, 0.5);
+}
+
+
+/* Campo clave y botón */
+#formularioClave {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#clave {
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: 2px solid #d94f4f;
+  width: 80%;
+  background: #fff0f0;
+  box-shadow: 0 2px 8px rgba(217, 79, 79, 0.3);
+  transition: all 0.3s ease;
+}
+
+#clave:focus {
+  outline: none;
+  border-color: #b04040;
+  background: #ffeaea;
+  box-shadow: 0 0 12px #ffc2c2;
+}
+
+#formularioClave button {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  background: linear-gradient(to right, #ff7e7e, #d94f4f);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(217, 79, 79, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#formularioClave button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff9a9a;
+}
+
+#mensajeError {
+  color: crimson;
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  animation: resplandor 2s infinite ease-in-out;
+}
