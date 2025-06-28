@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuando el silencio pesa más que el reconocimiento - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Cuando el silencio pesa más que el reconocimiento</h1>
+    <div class="texto-contenido">
+      <p>En un mundo donde la validación parece ser el alimento emocional más buscado, ¿Qué ocurre cuando nos encontramos hambrientos de aprecio pero nos enfrentamos a mesas vacías? La sensación de no ser valorado puede ser como una brisa fría que se cuela en el alma, dejándonos temblando en la incertidumbre de nuestro propio valor.
+
+		Es como si estuviéramos bailando en un escenario vacío, realizando piruetas invisibles en un esfuerzo por captar la atención que anhelamos. Pero, como bien dice el refrán, "te valora más quien sueña contigo que quien te tiene". Nos encontramos, entonces, en un silencio ensordecedor, preguntándonos si alguna vez seremos vistos, si alguna vez seremos suficientes.
+
+		Y luego está la trampa de las expectativas, esa telaraña sutil en la que nos enredamos sin siquiera dudarlo. "Si no me vas a querer como merezco, mejor no me quieras", ¿verdad? Depositamos nuestras esperanzas en los demás, esperando que llenen los vacíos que sentimos dentro de nosotros mismos. Pero a menudo nos encontramos con manos vacías, con corazones que no pueden contener lo que buscamos.
+
+		"Duele que no te valoren, pero duele más quedarse ahí", nos recuerda esa voz interna que clama por reconocimiento y amor. Es un baile entre la necesidad y la decepción, entre el deseo de ser valorado y la resignación a la realidad de que no siempre lo seremos. Nos encontramos atrapados en un ciclo interminable de esperanza y desilusión, luchando por encontrar un equilibrio entre lo que queremos y lo que realmente podemos esperar de los demás.
+
+		Pero en medio de esta lucha, quizás haya una lección que aprender. "Es hermoso dar sin esperar nada a cambio, pero a veces hace falta recibir sin pedir", ¿no es así? Tal vez encontremos un consuelo en saber que nuestro valor no depende de la opinión de los demás. Tal vez aprendamos a encontrar satisfacción en nuestros propios logros y cualidades, independientemente de la validación externa.
+
+		Entonces, mientras reflexionamos sobre estas palabras y navegamos por las complejidades de las relaciones humanas, quizás podamos encontrar un rayo de esperanza en la idea de que, aunque no siempre seremos valorados como deseamos, seguimos siendo dignos de amor y aprecio. Y tal vez, solo tal vez, podamos empezar a encontrar la paz en medio de la tormenta</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

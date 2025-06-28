@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Miedo a sentir - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Miedo a sentir</h1>
+    <div class="texto-contenido">
+      <p>La soledad emocional es un fantasma que se desliza en silencio, un susurro que se cuela en los momentos más inesperados, cuando la vida exterior se apaga y solo quedamos nosotros y nuestros pensamientos. No es simplemente la ausencia de compañía, sino la sensación de estar desconectado de todo y de todos, incluso de uno mismo. Es como estar atrapado en un laberinto sin salida, buscando respuestas en un eco que solo devuelve preguntas.
+
+		Dicen que la soledad del hombre no es más que su miedo a la vida, y no podría ser más cierto. La soledad emocional surge de ese miedo a enfrentar la realidad tal como es, con sus imperfecciones, con sus dolores y sus alegrías pasajeras. Es un escudo invisible que levantamos para no enfrentarnos a la vulnerabilidad de abrirnos a los demás, de mostrarnos tal como somos. Porque hacerlo implica riesgo: el riesgo de no ser comprendidos, de no ser aceptados, de no ser amados como quisiéramos.
+
+		A veces, nos rodeamos de personas, de ruido, de actividades, todo para evitar ese encuentro inevitable con nuestra propia soledad. Intentamos llenar los vacíos con relaciones que no profundizan, con sonrisas forzadas, con conversaciones que no van más allá de lo superficial. Pero al final del día, cuando todo se desvanece y nos quedamos a solas con nosotros mismos, esa soledad emocional se convierte en un reflejo que muestra todas nuestras inseguridades, nuestros miedos más profundos, nuestras heridas más ocultas.
+
+		Es como un abismo que se abre bajo nuestros pies, una caída constante en un vacío que parece no tener fin. Y a medida que caemos, nos aferramos a recuerdos, a esperanzas, a todo aquello que alguna vez nos hizo sentir vivos. Pero la soledad emocional no se calma con recuerdos del pasado, ni con sueños del futuro. Es un vacío que solo puede llenarse enfrentando el presente, aceptando quienes somos, con todas nuestras luces y sombras.
+
+		A menudo, buscamos llenar ese vacío con la presencia de otros, con su cariño, con su aceptación. Pero la verdad es que nadie puede llenarlo por nosotros. La soledad emocional es un viaje interno, un proceso de autoconocimiento y aceptación. Es aprender a ser nuestro propio refugio, a entender que nuestra valía no depende de la percepción de los demás, sino de nuestra propia capacidad para abrazarnos a nosotros mismos, con todas nuestras cicatrices y defectos.
+
+		Podemos estar en medio de una multitud y aún así sentirnos aislados, porque la conexión que buscamos va más allá de la presencia física. Buscamos ser comprendidos en lo más profundo, ser vistos por lo que realmente somos, ser aceptados en nuestra totalidad. Y esa búsqueda, a veces, nos deja agotados y desilusionados, como si nunca pudiéramos encontrar ese lugar al que realmente pertenecemos. Pero este sentimiento no es el mismo que el de evitar nuestros propios pensamientos o emociones. Es la sensación de que, incluso estando con otros, nadie entiende realmente lo que llevamos dentro.
+
+		La soledad emocional también puede ser una oportunidad para el crecimiento personal, un impulso para mirar hacia adentro y descubrir quiénes somos en realidad. Nos obliga a enfrentar nuestros miedos, nuestras dudas, nuestras fragilidades. Nos invita a conocer la verdad de nosotros mismos, sin máscaras, sin defensas. Porque solo cuando aceptamos nuestra propia compañía, cuando aprendemos a estar en paz con nuestra propia soledad, podemos empezar a construir relaciones auténticas con los demás.
+
+		Al final, la soledad del hombre no es más que su miedo a la vida. Y tal vez, solo tal vez, el primer paso para superar ese miedo sea aprender a abrazar la vida en todas sus formas, con sus incertidumbres, con sus altibajos, con sus momentos de dolor y de alegría. Porque la vida, con toda su complejidad, es un regalo que no podemos dejar escapar, y la soledad emocional, aunque dolorosa, es parte de ese viaje.
+
+		Entonces, en esos momentos de silencio y oscuridad, cuando la soledad se siente más intensa, tal vez podamos encontrar un rayo de luz en la aceptación. Aceptar que somos humanos, que estamos aprendiendo, que estamos creciendo. Aceptar que la soledad, al igual que la vida, no es algo que debamos temer, sino algo que debemos abrazar como parte de nuestro proceso, como una etapa necesaria en el camino hacia la verdadera conexión, no solo con los demás, sino con nosotros mismos.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

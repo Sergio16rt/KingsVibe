@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lo que un Te Quiero puede cambiar - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Lo que un Te Quiero puede cambiar</h1>
+    <div class="texto-contenido">
+      <p>Hay palabras que, aunque simples, tienen un poder que trasciende el momento en que se dicen. Un “te quiero” es una de esas palabras. No importa cuántas veces lo hayamos oído, o cuántas veces lo hayamos dicho, cada vez que esas dos palabras salen a la luz, algo cambia. A veces es una chispa de alegría, otras veces es un alivio en medio del caos, pero siempre tiene la capacidad de transformar. Porque, aunque no siempre lo pensemos, un "te quiero" dicho en el momento adecuado puede tener más impacto del que imaginamos.
+
+		Vivimos en un mundo acelerado, donde las emociones se dan por sentadas y donde asumimos que quienes nos rodean ya saben lo que sentimos por ellos. Creemos que hay tiempo, que podemos esperar para decir esas palabras, o que simplemente no es necesario repetirlo una y otra vez. Pero lo cierto es que, en medio de las rutinas y las prisas, esas palabras son más necesarias que nunca. Un “te quiero” en el momento oportuno puede ser el puente que necesitamos para recordar lo que de verdad importa, para reconectar con alguien cuando el día a día nos arrastra.
+
+		Decir “te quiero” no solo hace que la otra persona se sienta valorada y apreciada, también nos conecta con nuestra propia vulnerabilidad. Porque expresar lo que sentimos implica ser honestos, abrirnos, quitarnos las armaduras que a menudo usamos para protegernos del dolor o el rechazo. Es un acto de coraje, una declaración de que, pese a todo, estamos dispuestos a mostrar lo que hay en nuestro interior.
+
+		Pero no siempre decimos “te quiero” cuando deberíamos. A veces, lo reservamos para los momentos fáciles, para las ocasiones obvias, como si esas dos palabras solo tuvieran sentido en los buenos tiempos. Sin embargo, su verdadero poder se revela en los momentos difíciles, cuando parece que todo se derrumba o cuando el silencio pesa más que las palabras. Es en esos momentos cuando un "te quiero" se convierte en un salvavidas emocional, en un recordatorio de que no estamos solos, de que alguien está ahí, incluso en medio del caos.
+
+		Y no se trata solo de decirlo. Un "te quiero" no es una fórmula mágica que resuelve todo. Su fuerza radica en la autenticidad con la que se dice, en la conexión que genera. Porque esas dos palabras, aunque pequeñas, llevan consigo todo un universo de emociones, de recuerdos, de momentos compartidos. No son solo un gesto; son una declaración de lo que sentimos por alguien, y a veces, lo que esa persona más necesita es justamente eso: saber que, a pesar de todo, sigue siendo importante.
+
+		Un "te quiero" puede cambiar el estado de ánimo de alguien. Puede transformar un día gris en uno un poco más llevadero. Puede arrancar una sonrisa en medio de las lágrimas o aliviar el peso de una preocupación que parecía insuperable. Es un recordatorio de que, en este mundo lleno de incertidumbres, hay cosas que permanecen, personas que están ahí, y emociones que no cambian.
+
+		A veces, nos cuesta decirlo. Quizás porque pensamos que las acciones hablan más fuerte que las palabras, o porque creemos que ya lo hemos dicho suficientes veces. Pero las palabras también importan. Un "te quiero" tiene la capacidad de tocar el corazón de maneras que las acciones no siempre logran. Es directo, es claro, y en su simplicidad, revela una verdad que no siempre somos capaces de expresar de otra manera.
+
+		El poder de un "te quiero" en el momento adecuado reside en su capacidad para cambiar el curso de un día, de un sentimiento, o incluso de una relación. Nos recuerda que, en el fondo, todos necesitamos sentirnos queridos, valorados y apreciados. Y aunque a veces lo olvidemos, esas dos palabras, dichas con sinceridad, pueden ser todo lo que alguien necesita para seguir adelante, para sentir que, pase lo que pase, no está solo.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

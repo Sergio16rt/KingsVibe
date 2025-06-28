@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vivir sin perder la magia - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Vivir sin perder la magia</h1>
+    <div class="texto-contenido">
+      <p>Hay algo mágico en la niñez, algo que todos llevamos dentro pero que, con el tiempo, parece desvanecerse sin que lo notemos. A medida que crecemos, el niño que fuimos queda atrapado en algún rincón de nuestra memoria, esperando que lo volvamos a despertar, que lo dejemos ser parte de quienes somos. Porque aunque la vida adulta tenga su propio sentido, es en la infancia donde la vida se siente realmente viva, donde cada día es una aventura y cada emoción se vive sin reservas.
+
+		Ese niño interior nos recuerda que la vida puede ser bonita. Nos invita a recordar lo simple y lo esencial, a no dejar que las preocupaciones ahoguen nuestra capacidad de disfrutar el presente. Cuando somos niños, la vida se reduce a cosas simples: el juego, la curiosidad, la risa. No pensamos en el mañana, no nos preocupamos por cumplir expectativas o mantener una imagen. Solo vivimos. Y quizás, en esa simplicidad, está la verdadera chispa de la vida.
+
+		El problema es que, a medida que crecemos, las responsabilidades, las dudas y los miedos comienzan a ocupar el espacio de esa libertad. Nos decimos que ya no es momento de soñar sin límites, de hacer cosas solo porque sí, y poco a poco vamos apagando esa parte de nosotros. Nos volvemos prácticos, serios, responsables. Y aunque todo eso es necesario, también nos aleja de la esencia de lo que realmente significa estar vivo.
+
+		Despertar al niño que llevamos dentro no significa escapar de la realidad. Significa permitirnos sentir esa chispa, ese entusiasmo que nos hacía ver la vida con asombro y sin prejuicios. Significa recordar que está bien ilusionarse, que no todo tiene que ser útil o productivo. A veces, hacer algo solo por el placer de hacerlo, solo porque nos hace sentir vivos, es la mejor decisión.
+
+		Todos llevamos un niño de diez años dentro, ese niño que aún encuentra belleza en las cosas simples, que aún se ríe sin motivo, que aún sueña sin límites. Y cuando le permitimos salir, cuando lo dejamos ser parte de nuestras decisiones, la vida se vuelve un poco más ligera, un poco más auténtica. Porque en ese niño habita nuestra versión más libre, más honesta y, quizás, nuestra versión más feliz.
+
+		Tal vez el secreto para vivir plenamente no esté en acumular éxitos o en cumplir con todas las expectativas, sino en despertar ese niño interior y dejarlo ser nuestra guía de vez en cuando. Porque al final del día, lo que realmente nos llena no son los logros, sino esos momentos en los que nos permitimos ser nosotros mismos, sin filtros, sin miedos, como lo hacíamos cuando éramos niños.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Antes de que Sea Tarde - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Antes de que Sea Tarde</h1>
+    <div class="texto-contenido">
+      <p>Hay un momento en la vida, casi imperceptible, en el que nos damos cuenta de que la mejor época ya ha pasado. No es un día en concreto, ni un evento. Simplemente llega, como un susurro en la noche, como un destello en medio de una conversación. Y te golpea: ya no eres un niño, y la adolescencia, esa etapa de descubrimiento, de libertad y caos, ha quedado atrás. La vida ha cambiado. Tú has cambiado. Y de repente, miras atrás y sientes un vacío que no sabías que existía, una nostalgia que parece abrazarte y sofocarte a la vez.
+
+		La adolescencia es esa montaña rusa que, aunque a veces da miedo, siempre te deja con ganas de volver a subir. Son esos días en los que no importaba la hora ni el lugar, en los que las preocupaciones parecían tan lejanas. Las primeras veces, los errores que no dolían tanto, las risas sin motivo y la sensación de que el mundo estaba a tus pies. Creías que todo era posible, que el tiempo estaba de tu lado, y que esas amistades, esas tardes sin fin, serían para siempre.
+
+		Pero lo cierto es que nada es para siempre. Y mientras avanzas en la vida, te das cuenta de que esos días no volverán. Las tardes jugando en la calle, las noches en vela hablando de tonterías con tus amigos, la sensación de que el verano duraba una eternidad… todo eso se ha ido. Y aunque ahora tienes nuevos retos, nuevas metas y responsabilidades, hay algo en ti que echa de menos esa ligereza, esa libertad que solo se tiene cuando no eres consciente de lo rápido que pasa el tiempo.
+
+		Nos dijeron muchas veces que disfrutáramos, que ser niño y adolescente era la mejor etapa de la vida. Pero, ¿cómo íbamos a entenderlo entonces? ¿Cómo podíamos saber que, en ese momento, estábamos viviendo los recuerdos que más tarde nos llenarían de nostalgia? En ese entonces, queríamos crecer. Queríamos ser mayores, tomar nuestras propias decisiones, escapar de las restricciones de la infancia. Nos parecía que la libertad estaba al otro lado de la adolescencia, que la vida adulta era la verdadera meta.
+
+		Y ahora, miramos hacia atrás con una mezcla de tristeza y añoranza. Porque la verdad es que lo que dejamos atrás no era solo una etapa, sino una parte de nosotros mismos. Esa parte que se reía sin preocuparse por el futuro, que se lanzaba a la aventura sin miedo al fracaso, que vivía el presente con una intensidad que, de adultos, nos cuesta recuperar. Nos hemos vuelto más conscientes, más cautos, y en ese proceso, hemos perdido un poco de esa magia que solo la juventud nos regalaba.
+
+		La vida adulta trae consigo muchas cosas, pero pocas pueden compararse con la pureza de ser un niño, con la libertad de ser un adolescente. A medida que crecemos, las responsabilidades empiezan a acumularse, los días se hacen más cortos y el tiempo parece escurrirse entre nuestros dedos. Ya no hay tardes interminables de verano, ya no hay primeras veces. Lo que queda es el recuerdo de lo que fuimos, de lo que vivimos, y la sensación de que, de alguna manera, dejamos algo atrás.
+
+		Es inevitable sentir nostalgia, sentir que hemos perdido algo valioso en el camino. Pero quizás, en esa nostalgia, también haya un recordatorio. Un recordatorio de que la vida, aunque cambie, sigue ofreciendo momentos que vale la pena vivir. Que aunque ya no seamos esos adolescentes despreocupados, todavía podemos encontrar la belleza en las pequeñas cosas, en los momentos de quietud, en las conexiones auténticas.
+
+		Y quizás, al mirar atrás con tristeza, también podamos aprender a mirar el presente con gratitud. Porque aunque la mejor época de nuestras vidas ya haya pasado, aún tenemos la oportunidad de crear nuevos recuerdos, de vivir nuevas aventuras, de encontrar nuevas razones para sonreír. La clave está en no perder de vista lo que hemos aprendido: que el tiempo pasa, que la vida cambia, y que debemos aprender a disfrutar cada etapa, antes de que también se convierta en un simple recuerdo.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

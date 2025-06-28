@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Familia que Elegimos - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">La Familia que Elegimos</h1>
+    <div class="texto-contenido">
+      <p>La vida es un camino que recorremos en solitario, pero que se llena de colores, risas y momentos inolvidables gracias a las personas con las que decidimos caminar. En un mundo donde las conexiones se vuelven efímeras y superficiales, encontrar a ese pequeño grupo de amigos de verdad, ese grupo reducido de personas con las que puedes contar para todo, es como descubrir un regalo del destino. No se trata de cantidad, sino de calidad. Son esos amigos que no necesitan ser muchos, pero que, con su sola presencia, lo llenan todo.
+
+		Tener un grupo de amigos de verdad es tener un refugio en medio del caos, un rincón seguro donde siempre eres bienvenido, donde no tienes que ser nadie más que tú mismo. Es saber que has encontrado tu lugar, tu gente, ese conjunto de locos que te entiende sin necesidad de palabras, que ríe contigo en las buenas y te levanta en las malas. Es saber que, aunque la vida dé mil vueltas, siempre habrá un lugar donde encajas, donde todo tiene sentido.
+
+		Encontrar ese grupo es como volver a casa después de un largo viaje. Es la sensación de pertenencia, de saber que has encontrado a quienes te acompañarán en este camino llamado vida. Porque la amistad verdadera no se trata solo de compartir buenos momentos; es un compromiso silencioso, una promesa no dicha de estar ahí, pase lo que pase. Es lo bonito de haber encontrado tu lugar en el mundo, de saber que no estás solo, de sentir que, sin importar lo que venga, siempre habrá un equipo detrás de ti, apoyándote y celebrando cada uno de tus logros.
+
+		Y entonces, empiezas a pensar en el futuro, en todas las cosas que aún os quedan por vivir juntos. Porque cuando encuentras a tu grupo, ese pequeño conjunto de personas que se convierten en tu familia, quieres que sea para toda la vida. Piensas en los años que han pasado, en cómo os conocisteis por casualidad, en cómo cada uno ha aportado su granito de arena para formar este vínculo tan especial. Y te emociona pensar en lo que aún está por llegar: en esos viajes locos que aún no habéis planeado, en esas anécdotas que contaréis una y otra vez cuando os reunáis, en esas liadas que aún están por suceder.
+
+		Cada uno de vosotros aporta algo único al grupo. Está el payaso, el borracho, el rico, el loco, el imbécil, el del 33%, el que nunca queda. Es un equilibrio perfecto, una combinación de personalidades que, de alguna manera, encajan como piezas de un rompecabezas. Y lo mejor es que, aunque pase el tiempo, aunque no habléis todos los días o no quedéis tan seguido, cuando os reunís todo sigue igual. Es como si no hubiera pasado el tiempo. Las bromas siguen ahí, las risas, las miradas cómplices. Y ese sentimiento, esa alegría al llegar a casa después de una tarde juntos, esa sonrisa que se te escapa mientras piensas “qué cabrones son”, es algo que no tiene precio.
+
+		A veces, al mirar atrás, te das cuenta de lo afortunado que eres de haber encontrado a estas personas. Y al mirar hacia adelante, te invade una emoción aún mayor al pensar en todo lo que os queda por vivir. Porque aún queda lo mejor: esos viajes de verano a la playa, esas escapadas a otros países, esas noches de fiesta que terminan en anécdotas que contaréis durante años. Queda tanto por experimentar, tantas risas por compartir, tantas historias por escribir.
+
+		Y cuando piensas en el futuro, en momentos importantes como una boda, imaginas mirarlos desde el altar, mientras das tus votos, y ver sus caras de felicidad por ti. Porque la verdadera amistad es eso: es estar presente en los momentos que importan, es compartir no solo la alegría de hoy, sino también los sueños de mañana. Y sabes que estarán ahí, año tras año, celebración tras celebración, siendo testigos de cada paso que des.
+
+		Al final, la vida se trata de eso: de compartirla con quienes realmente importan. Y aunque la soledad emocional a veces asome, aunque los miedos y las inseguridades nos acechen, tener a ese grupo de amigos, a esa familia que elegimos, es el mejor antídoto contra cualquier tristeza. Porque aún queda mucho por vivir, y con ellos a tu lado, la vida se siente un poco más ligera, un poco más divertida y, sobre todo, un poco más llena de sentido.
+
+		Así que, ¿qué más se puede pedir? La vida nos ha juntado por alguna razón, y mientras sigamos juntos, todo lo que venga será bienvenido. Porque, como dicen, la amistad verdadera no se trata de ser inseparables, sino de saber que, aunque el tiempo pase y las distancias crezcan, siempre habrá un lugar, un grupo, un “nosotros” al que volver. Y eso, querido amigo, es lo más bonito que se puede tener.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

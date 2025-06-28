@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nostalgia: ¿Aliada o Enemiga? - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Nostalgia: ¿Aliada o Enemiga?</h1>
+    <div class="texto-contenido">
+      <p>En algún punto de nuestras vidas, todos hemos sentido ese cosquilleo en el corazón, ese peso dulce y amargo que nos hace viajar a tiempos pasados. La nostalgia, una sensación tan familiar como extraña, nos envuelve en un abrazo que parece reconfortante, pero que también puede ser peligroso. Nos transporta a momentos que, aunque quizás no fueron perfectos, recordamos con un cariño casi irreal.
+
+		Dicen que la nostalgia es una peligrosa manera de comparar. Es cierto. Nos hace mirar hacia atrás con una lupa selectiva, resaltando solo lo bueno, los días felices, las risas sinceras. Es como si el tiempo puliera los bordes afilados de nuestros recuerdos, dejándonos con versiones idealizadas de lo que una vez fue. Pero al hacerlo, nos convierte en ciegos para lo malo, en prisioneros de una ilusión. Olvidamos las dificultades, las frustraciones, las lágrimas derramadas. Y al comparar el presente con ese pasado pulido y brillante, el ahora parece deslucido, insuficiente.
+
+		La nostalgia, a menudo, es la alegría de estar triste. Nos atrapa en una paradoja: recordamos con alegría tiempos que ya no volverán, pero al mismo tiempo, esa conciencia nos llena de tristeza. Crecemos con sueños en nuestros ojos y canciones en nuestros labios, imaginando una vida que siempre parece estar por llegar. Pero cuando la realidad se impone, cuando descubrimos que la vida no es lo que pensábamos que sería, aparece la nostalgia, esa amiga traicionera que nos invita a refugiarnos en lo que fue, en lo que pudo haber sido.
+
+		Sin embargo, no todo en la nostalgia es malo. En su justa medida, puede ser un recordatorio de que hemos vivido momentos que valen la pena ser recordados, que hay capítulos de nuestra historia personal que nos han formado y que, en cierta forma, nos definen. Nos invita a reflexionar sobre quiénes éramos y cómo hemos llegado a ser quienes somos. Nos permite valorar lo que hemos aprendido, lo que hemos superado, lo que hemos amado.
+
+		El peligro está en quedarnos atrapados en ella, en convertirla en un filtro a través del cual miramos la vida actual, desmereciendo lo que tenemos ahora. La nostalgia puede ser un veneno lento si la usamos para huir del presente, para evitar enfrentar nuestras realidades actuales. Nos hace anhelar un tiempo pasado que, en realidad, nunca fue tan perfecto como lo recordamos.
+
+		Así que, ¿es la nostalgia buena o mala? La respuesta depende de cómo la manejemos. Si aprendemos a verla como un simple visitante, que nos recuerda momentos especiales pero que no debe quedarse a vivir con nosotros, puede ser una herramienta poderosa para valorar nuestra historia. Pero si permitimos que se convierta en una constante compañera, cegándonos para lo malo y enfocándonos solo en lo bueno, entonces se transforma en un enemigo silencioso que nos roba la capacidad de disfrutar el presente y de construir un futuro sin las sombras del pasado.
+
+		Quizás la clave está en encontrar un equilibrio. En recordar sin idealizar, en aceptar que hubo cosas buenas, pero también malas. En apreciar lo que fuimos, pero sin dejar que eso defina lo que somos o lo que seremos. Porque, al final, la nostalgia no debe ser más que una brisa suave que acaricia nuestros recuerdos, no una tormenta que nos arrastre a los días que ya se fueron.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

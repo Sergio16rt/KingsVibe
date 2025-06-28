@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Escuchar sin aprender - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Escuchar sin aprender</h1>
+    <div class="texto-contenido">
+      <p>Hay algo casi universal en las charlas de los padres. Ese momento en el que te sientan para hablar de algo importante, te miran a los ojos y empiezan a decirte todo lo que ya sabes: qué has hecho mal, qué consecuencias puede tener y por qué deberías cambiar tu comportamiento. Lo escuchas, porque sabes que es lo correcto. Sabes que tienen razón, pero en algún rincón de tu mente, solo estás esperando a que termine. Asientes, prometes que no volverá a pasar, y a veces, lo que te han dicho se desvanece tan rápido como terminó la conversación. Entonces, ¿por qué lo volvemos a hacer?
+
+		Sabemos lo que está mal, entendemos las consecuencias, pero aún así nos encontramos repitiendo los mismos errores. Es como si una parte de nosotros deseara desafiar lo que nos han dicho, como si necesitáramos tocar el fuego para entender realmente que quema. ¿Por qué no escuchamos esas charlas que, aunque repetitivas, están llenas de lecciones?
+
+		Puede que la respuesta esté en la naturaleza humana. A veces, saber lo que está mal no es suficiente. La teoría es fácil, pero la práctica es otra cosa. Los impulsos, las emociones, la curiosidad, y hasta el deseo de rebelarnos, juegan un papel importante. Sabemos que hay algo malo en nuestras acciones, pero la inmediatez de lo que queremos en ese momento suele pesar más que la racionalidad de las palabras que recibimos. Es como si el placer de lo inmediato nublara nuestra capacidad de tomar decisiones a largo plazo.
+
+		Quizás volvemos a caer en esos errores porque el cambio verdadero requiere más que un sermón bien intencionado. Requiere una experiencia emocional, una conexión entre lo que nos dicen y lo que sentimos. Escuchamos a nuestros padres, pero no siempre sentimos el peso de sus palabras. Es como si el entendimiento racional estuviera desconectado de nuestra voluntad emocional. Por eso, aunque lo sepamos de antemano, tenemos que vivirlo, experimentarlo por nosotros mismos para que realmente tenga impacto.
+
+		Y claro, está el otro gran factor: la rebeldía. Hacer algo que sabemos que está mal puede ser nuestra manera de retomar el control. Aunque la charla venga desde un lugar de amor y preocupación, a veces la sentimos como una imposición, como si nos quitaran el poder de decidir por nosotros mismos. Entonces, el repetir el error se convierte en un acto de resistencia, una forma de afirmar que, aunque nos hayan advertido, nosotros decidimos nuestro propio camino, aunque eso signifique tropezar.
+
+		Además, las charlas suelen ser vistas como algo que “debemos soportar”, como si fueran una especie de castigo verbal que, una vez terminado, nos libera para hacer lo que realmente queremos. Nos acostumbramos tanto a oírlas que pierden el impacto, y en lugar de tomarlas como una oportunidad de aprendizaje, las percibimos como una barrera que debemos cruzar antes de volver a lo que queremos hacer.
+
+		Entonces, ¿por qué lo hacemos? Tal vez porque, en el fondo, necesitamos equivocarnos para aprender. Necesitamos tropezar, aunque nos duela, para entender realmente por qué algo está mal. Y aunque nuestros padres nos regalen esas charlas con las mejores intenciones, a veces la experiencia personal es el único maestro capaz de hacernos cambiar.
+
+		Es un ciclo extraño, ¿verdad? Sabemos que lo que nos dicen es cierto, entendemos las consecuencias, pero parece que hasta que no enfrentamos esas consecuencias de frente, no somos capaces de internalizarlo. Tal vez, lo importante no es tanto la charla en sí, sino el hecho de que, después de cada error, nuestros padres están ahí, dispuestos a repetirla una y otra vez, recordándonos que el cambio es posible, y que no importa cuántas veces nos equivoquemos, siempre habrá alguien dispuesto a guiarnos de nuevo.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

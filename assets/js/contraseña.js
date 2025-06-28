@@ -5,18 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const fraseClave = document.getElementById('fraseClave');
 
   const claves = {
-    "Antorchita": "rosita.html",
-    "Borrego": "dani.html",
+    "AntorchitaHermanita": "rosita.html",
+    "BorregoTetuco": "dani.html",
     // Puedes agregar más claves aquí
   };
 
   const frasesError = [
     "No eres digno de esta historia...",
     "Tu corazón aún no está listo.",
-    "Prueba de nuevo cuando el viento sople a tu favor.",
-    "Solo las almas especiales pueden continuar.",
-    "No todas las puertas se abren con fuerza...",
-    "El amor verdadero sabría la respuesta."
+    "Tu alma duda… y las puertas no se abren ante la duda.",
+    "Solo quien entiende el latido tras las palabras, puede pasar.",
+    "Vuelve cuando sepas por quién laten estas palabras.",
+    "No puedes forzar una cerradura hecha de emociones."
   ];
 
   // Función para animar el cambio de texto

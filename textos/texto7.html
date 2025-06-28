@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Lado Oscuro del Descanso - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">El Lado Oscuro del Descanso</h1>
+    <div class="texto-contenido">
+      <p>Es curioso cómo la noche, que debería ser un momento de descanso, se convierte en el escenario donde nuestros pensamientos más oscuros encuentran su camino. Nos tumbamos en la cama, apagamos la luz y, de repente, todo lo que hemos logrado ignorar durante el día vuelve a la superficie. Los pensamientos que hemos mantenido a raya comienzan a inundar nuestra mente, sin prisa pero sin pausa, y lo que debería ser un respiro se convierte en una tormenta silenciosa.
+
+		¿Por qué justo en ese momento? Tal vez es porque, cuando el mundo se apaga, ya no tenemos distracciones. Durante el día, estamos ocupados, entretenidos, rodeados de gente, inmersos en tareas y conversaciones que mantienen nuestra mente ocupada. Pero al caer la noche, cuando nos quedamos solos con nosotros mismos, ya no hay excusas. La soledad del cuarto y el silencio que nos envuelve nos obligan a enfrentarnos a aquello que hemos estado evitando.
+
+		Pensamos en todo lo que no hemos hecho, en los errores cometidos, en los miedos que acechan en lo profundo de nuestro ser. Las preocupaciones, que durante el día parecían pequeñas, se agrandan bajo el manto de la oscuridad. Lo que era un simple pensamiento se convierte en un monstruo que no podemos evitar mirar. La mente empieza a reproducir una película de nuestros peores momentos, de nuestros fracasos, de los "y si..." que nunca llegan a desaparecer.
+
+		Es entonces cuando nos sentimos vulnerables, cuando lloramos sin saber muy bien por qué, cuando el peso de todo lo que hemos callado se siente más pesado que nunca. Tal vez es que, en la tranquilidad de la noche, nuestras emociones se amplifican. Lo que durante el día podemos esquivar, en la cama se convierte en algo imposible de ignorar. Y, de alguna manera, la tristeza nos parece más accesible, como si estuviéramos permitiéndonos sentir lo que hemos estado reprimiendo.
+
+		Agobiados por pensamientos que parecen no tener fin, nos preguntamos por qué no podemos simplemente apagar la mente y descansar. Pero la verdad es que el cuerpo puede estar cansado, pero la mente, en su constante búsqueda de respuestas, sigue funcionando. Busca entender, busca procesar lo que hemos vivido, lo que hemos sentido, lo que hemos dejado sin resolver.
+
+		Tal vez lloramos porque, en el fondo, la noche es el único momento en el que nos permitimos sentir de verdad. El día nos exige fuerza, control, mantener las apariencias. Pero en la cama, en la intimidad de nuestras sábanas, nos permitimos romper, aunque solo sea por un momento. Nos permitimos sentir el peso de nuestros pensamientos, aunque no sepamos qué hacer con ellos.
+
+		El problema es que, cuanto más intentamos evitar estos pensamientos, más fuertes parecen hacerse. Cuanto más luchamos por dormir, por descansar, más despiertos nos mantenemos. Y la mente, al no encontrar una salida, empieza a divagar, a exagerar, a imaginar los peores escenarios. Es una especie de círculo vicioso: cuanto más queremos escapar, más atrapados nos sentimos.
+
+		Pero tal vez, en ese proceso nocturno de sentir y pensar, también haya algo de sanación. Quizás esos momentos de tristeza, de reflexión, nos estén dando una oportunidad de entendernos mejor, de procesar lo que hemos estado ignorando. Quizás, en esas lágrimas que caen en la oscuridad, haya un proceso de liberación, aunque duela.
+
+		Es irónico cómo, en el momento en que deberíamos estar en paz, nos encontramos más inquietos que nunca. Pero tal vez, solo tal vez, esas noches de pensamientos y lágrimas nos enseñen algo sobre nosotros mismos, algo que, de día, somos incapaces de ver.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

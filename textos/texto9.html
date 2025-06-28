@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Decirlo de Verdad - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">Decirlo de Verdad</h1>
+    <div class="texto-contenido">
+      <p>Hay palabras que, aunque sencillas, tienen el poder de cambiar el día de alguien, de transformar una relación, de iluminar un momento oscuro. "Te quiero" es una de esas palabras. Pero a veces, surge la duda: ¿cuántas veces se pueden decir esas dos palabras antes de que pierdan su impacto? ¿Se puede llegar a un punto en el que, por mucho que lo digamos con sinceridad, se convierta en una rutina? Es una pregunta que muchos nos hemos hecho al enfrentarnos a la paradoja de las emociones repetidas.
+
+		La verdad es que cuando decimos "te quiero", en esos momentos de conexión, de amor sincero, no lo hacemos por el simple hecho de decirlo. Lo hacemos porque sentimos que esas palabras son la mejor manera de expresar lo que llevamos dentro. Cada "te quiero" debería ser una manifestación de lo que realmente sentimos, un reflejo de esa conexión que nos une a otra persona. Pero, ¿qué pasa cuando lo repetimos una y otra vez? ¿Puede perder su valor?
+
+		Hay quienes creen que, cuanto más se repite algo, más rutinario se vuelve. Que al decir "te quiero" con demasiada frecuencia, esas palabras, que alguna vez tuvieron un gran significado, se convierten en algo cotidiano, casi mecánico. Es una preocupación válida, porque el amor y el cariño, aunque constantes, necesitan ser sentidos y vividos, no simplemente declarados sin pensar. Repetir "te quiero" por costumbre, sin la emoción que lo respalda, podría hacer que esa frase pierda su magia.
+
+		Pero al mismo tiempo, hay algo más que considerar: la autenticidad. Si cada "te quiero" es sincero, si cada vez que lo dices realmente lo sientes, ¿importa cuántas veces lo repitas? El amor no tiene un límite, y las palabras que lo expresan tampoco deberían tenerlo. Cada "te quiero" dicho desde el corazón tiene un impacto positivo. Porque cuando hay verdad detrás de esas palabras, siempre dejan huella.
+
+		Lo que realmente importa es la intención. Decir "te quiero" no debería ser un simple trámite, algo que hacemos porque sentimos que debemos hacerlo. Debería ser una expresión de lo que sentimos en ese momento. Un recordatorio de que, aunque el día haya sido difícil, aunque las cosas no siempre salgan como esperamos, el amor sigue ahí. Es en la autenticidad donde esas palabras encuentran su fuerza, su capacidad de tocar el corazón, incluso si se han dicho muchas veces antes.
+
+		Por otro lado, también es importante recordar que las palabras, aunque poderosas, no lo son todo. Decir "te quiero" no debe ser una sustitución de lo que sentimos o hacemos. Las acciones deben acompañar a las palabras. Porque el riesgo de que "te quiero" pierda su impacto viene cuando lo decimos como si fuera una obligación, sin respaldarlo con lo que hacemos. Es en ese vacío entre las palabras y las acciones donde las cosas pueden volverse monótonas.
+
+		Entonces, ¿cuántos "te quiero" son demasiados? Quizás la respuesta no está en la cantidad, sino en cómo los decimos y vivimos. No hay un límite para expresar amor, siempre que cada expresión sea un reflejo de lo que realmente sentimos. El amor, cuando es auténtico, no tiene fecha de caducidad, ni se agota por repetirse. Es más, podría ser que, cuanto más lo decimos con sinceridad, más profundo se vuelve.
+
+		Quizás la verdadera pregunta no es si decimos "te quiero" demasiado, sino si lo decimos con todo lo que esas palabras significan. Porque, al final del día, lo que importa no es cuántas veces lo digamos, sino cómo lo hacemos sentir cada vez que lo pronunciamos.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El valor de lo irremplazable - King's Vibes</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/texto.css">
+  <link rel="stylesheet" href="../assets/css/animaciones.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="texto-body pagina-con-musica">
+
+  <!-- Fondo decorativo -->
+  <canvas id="mariposas-canvas"></canvas>
+  <canvas id="estrellas-canvas" class="oculto"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- Contenido del texto -->
+  <div class="texto-container">
+    <h1 class="texto-titulo">El valor de lo irremplazable</h1>
+    <div class="texto-contenido">
+      <p>A veces me pregunto por qué alguien dejaría ir a una persona como yo, alguien que solo aporta cosas buenas a su vida. No se trata solo de mis cualidades o de lo que puedo hacer por los demás, sino de cómo siempre estoy ahí para levantar el ánimo y sacar una sonrisa, incluso en los momentos más difíciles. Soy el que siempre encuentra la forma de hacer reír, de convertir una situación tensa en un momento divertido. Es algo que hago naturalmente, porque sé que la risa es una de las mejores maneras de conectar con los demás y hacer que todo parezca un poco más fácil.
+
+		No entiendo por qué no se valora más a alguien que trae tanta alegría. En un mundo donde todos enfrentamos desafíos, tener a alguien que sabe cómo hacerte reír, que puede cambiar tu día con una broma o un comentario ingenioso, es algo que debería cuidarse. La gente suele subestimar lo importante que es tener a alguien así a su lado, pero cuando esa persona ya no está, es cuando realmente te das cuenta de lo que has perdido.
+
+		Lo curioso es que, sin que me lo proponga, la gente confía en mí casi de inmediato. Es algo que he notado una y otra vez: personas que apenas me conocen ya me cuentan sus secretos o acuden a mí cuando necesitan hablar y desahogarse. Quizás es porque sé escuchar y ofrecer la ayuda justa en el momento adecuado. No lo hago buscando reconocimiento, simplemente me sale de forma natural, porque realmente me importa el bienestar de los demás. Ser esa persona en la que los demás confían es un rol que asumo con gusto, porque entiendo lo que significa tener a alguien que te escuche sin juzgar.
+
+		Además, no es solo que sea gracioso o divertido, también sé estar cuando se necesita apoyo serio. Pero lo que realmente me distingue es mi capacidad para hacer que los demás se sientan bien, para crear un ambiente donde todos pueden relajarse y disfrutar. Sé que tengo una forma especial de conectar con la gente, de hacer que las personas se sientan comprendidas y, sobre todo, de hacer que se rían. Y eso, sinceramente, es algo que no deberías querer perder.
+
+		Entonces, pregúntate por qué serías tan tonto como para dejar ir a alguien que solo te beneficia. ¿Realmente vas a ignorar a una persona que está siempre para apoyarte, que te hace reír cuando más lo necesitas y que está ahí tanto en los buenos como en los malos momentos? ¿De verdad crees que puedes encontrar a alguien igual de valioso y genuino por ahí? Si no te das cuenta de lo increíble que es tener a alguien así en tu vida, entonces claramente no valoras lo que tienes. La vida no es un juego de oportunidades infinitas; perder a alguien que te da tanto, sin pedir nada a cambio, es una estupidez monumental. Así que, si dejas escapar a alguien como yo, no será más que una señal de que no sabes apreciar lo que realmente importa.</p>
+    </div>
+    <div class="volver">
+      <a href="index.html">← Volver a Textos</a>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controles-musica">
+    <button id="btn-musica">🎶 Fluye con ella</button>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+  <button id="modo-noche">🌙 Modo Noche</button>
+
+  <!-- Audio exclusivo para textos -->
+  <audio id="audio-dia" src="../assets/audio/musica-texto-dia.mp3" loop></audio>
+  <audio id="audio-noche" src="../assets/audio/musica-texto-noche.mp3" loop></audio>
+
+  <footer>
+    <p>Hecho con 💜 por alguien que siente profundamente</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/magia.js"></script>
+</body>
+</html>

@@ -1,9 +1,10 @@
 const frases = [
-  "La nostalgia es el eco del alma.",
-  "Cada recuerdo tiene su aroma.",
-  "Las mariposas también lloran.",
-  "Los abrazos que ya no están.",
-  "En el silencio, habita la memoria."
+  "Si estás aquí, tal vez no sea casualidad.",
+  "Cada texto aquí guarda algo que no pude decir en voz alta.",
+  "Bienvenido a un rincón donde el alma escribe sin filtros.",
+  "Lo que lees es mío, pero puede que también sea tuyo.",
+  "No todos los latidos se oyen... Algunos se leen.",
+  "Hay capítulos que solo se escriben con lágrimas."
 ];
 
 let fraseIndex = 0;
